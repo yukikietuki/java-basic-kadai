@@ -5,7 +5,7 @@ public class Prime_Chapter11 {
 
         boolean[] numArray = new boolean[101];
 
-//　iは配列の番号　中身の数字はi+1
+
         for (int i = 1; i < numArray.length; i++) {
             numArray[i] = true;
         }
@@ -17,14 +17,15 @@ public class Prime_Chapter11 {
                     continue;
                 }
             }
-            num += 1;
+
+        }
 
             for (int i = 2; i < numArray.length; i++) {
                 if (numArray[i] == true) {
                     System.out.println(i);
                 }
-            }break;
-        }
+            }
+
     }
 
 
