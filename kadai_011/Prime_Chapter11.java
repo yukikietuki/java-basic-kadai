@@ -9,6 +9,7 @@ public class Prime_Chapter11 {
         for (int i = 1; i < numArray.length; i++) {
             numArray[i] = true;
         }
+
 //        割る数　num
         for (int num = 2; num < numArray.length; num++) {
             for (int i = num + 1; i < numArray.length; i++) {
@@ -17,17 +18,12 @@ public class Prime_Chapter11 {
                     continue;
                 }
             }
-
         }
 
-            for (int i = 2; i < numArray.length; i++) {
-                if (numArray[i] == true) {
-                    System.out.println(i);
-                }
+        for (int i = 2; i < numArray.length; i++) {
+            if (numArray[i] == true) {
+                System.out.println(i);
             }
-
+        }
     }
-
-
-
 }
