@@ -16,13 +16,12 @@ public class Jyanken_Chapter24 {
         Scanner scanner = new Scanner(System.in);
         String myChoice = scanner.next();
 
-        if (myChoice.equals("r") || myChoice.equals("s") || myChoice.equals("p")) {
-
-        } else {
+        if (!(myChoice.equals("r") || myChoice.equals("s") || myChoice.equals("p"))) {
             System.out.println("無効な選択です");
-
+            return getMyChoice();
+        }else {
+            return myChoice;
         }
-        return myChoice;
 
     }
 
